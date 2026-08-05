@@ -27,6 +27,10 @@ pydantic
 # Logging e configs
 PyYAML
 
+google-genai
+anthropic
+openai
+
 # Notebook (optional - only needed to run notebooks)
 ipykernel # The Python Kernel
 jupyterlab # Just the new interface for Jupyter Notebook
