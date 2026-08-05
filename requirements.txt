@@ -1,0 +1,34 @@
+# This requirment is for install all dependencies once.
+# Used when you want to get the full project working
+
+###############################################
+##### Fraud Detection Minimun Requirement #####
+###############################################
+# Core ML
+torch
+torchvision
+--extra-index-url https://download.pytorch.org/whl/cu121
+
+# Data loading e utilitários
+pandas
+numpy
+Pillow
+scikit-learn
+matplotlib
+seaborn
+opencv-python
+tqdm # For progress bar
+Jinja2
+insightface
+onnxruntime-gpu
+
+pydantic
+
+# Logging e configs
+PyYAML
+
+# Notebook (optional - only needed to run notebooks)
+ipykernel # The Python Kernel
+jupyterlab # Just the new interface for Jupyter Notebook
+
+###############################################

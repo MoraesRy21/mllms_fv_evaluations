@@ -1,0 +1,45 @@
+dataset:
+  csv_path: "root_project_path/for_the/dataset_maped_in_csv/dataset.csv"
+
+bins_pairs:
+
+  parameters:
+    max_pairs_per_class: 5
+    seed: 42
+    use_pivot_for_fraud: False
+    fraud_clean_sample_size: 8
+    image_strategy:
+      use_full_image: True
+      # Estratégias: 'warpe', 'pad_black', 'pad_mean', 'center_crop' or empty
+      resize_strategy: pad_black
+      resize_size: [ 640, 640 ]
+      margin: 10
+
+  filters:
+    hour_range: [9, 16]
+    column_filters:
+#      glt_done: true
+      is_student: True
+    range_filters:
+#      brightness: [ 40, 220 ]
+#      contrast: [ 20, 100 ]
+      day: [ 2025-10-13, 2025-10-17 ]
+#    value_filters:
+#      buss_line: [ 612, 5116, 6240 ]
+#    boolean_filters:
+#      is_outlier: false
+#    drop_na_columns:
+#      - x_bbox
+#      - y_bbox
+#      - w_bbox
+#      - h_bbox
+#    keep_columns: null
+
+  results:
+    root_path: "results/pairs"
+    log_path: "results/pairs/logs"
+    pair_images_dir: "results/pairs/images"
+
+    log:
+      name: "face_pair_generator"
+      level: INFO

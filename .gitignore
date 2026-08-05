@@ -1,0 +1,70 @@
+##################################
+#  ENVIRONMENTS
+##################################
+
+ENV/
+env.bak/
+
+##################################
+#  PYTHON
+##################################
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+##################################
+#  JUPYTER
+##################################
+
+.ipynb_checkpoints/
+# Arquivos pesados de execução no notebook
+*.checkpoint
+*.nbconvert
+*.log
+
+##################################
+#  RESULTS
+##################################
+
+# Entire folder of results (machine-generated)
+results/
+checkpoint/
+resources/
+
+##################################
+#  DATA / DATASETS
+##################################
+
+data/
+./dataset/
+*.zip
+*.tar.gz
+
+##################################
+#  LOGS AND TEMPORARY FILES
+##################################
+
+logs/
+*.log
+*.tmp
+*.temp
+
+##################################
+#  IDEs
+##################################
+
+# JetBrains / PyCharm
+.idea/
+*.iml
+
+# VSCode
+.vscode/
+
+##################################
+#  OPERATING SYSTEM
+##################################
+
+.DS_Store
+Thumbs.db
+desktop.ini
