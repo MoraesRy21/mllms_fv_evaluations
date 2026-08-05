@@ -2,7 +2,7 @@
 # Used when you want to get the full project working
 
 ###############################################
-##### Fraud Detection Minimun Requirement #####
+######### Project Minimun Requirement #########
 ###############################################
 # Core ML
 torch
